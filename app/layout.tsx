@@ -12,7 +12,7 @@ export default function RootLayout({
   const pathname = usePathname();
 
   // Hide navbar on login and sign-in pages
-  const showNavbar = !pathname?.includes('/login') && !pathname?.includes('/signin');
+  const showNavbar = !pathname?.includes('/login') && !pathname?.includes('/signup');
 
   // Adjust padding based on navbar visibility
   const mainClass = showNavbar ? 'min-h-screen pt-12' : 'min-h-screen';
